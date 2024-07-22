@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Klik Masuk Untuk Mengklaim Hadiah Anda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner di atas -->
+    <div class="banner">
+        Selamat Datang di Program Hadiah Kami!
+    </div>
+
+    <div class="container">
+        <div class="title-box">
+            <h3>Untuk Mengklaim Hadiah Anda Setujui Persyaratan Kami</h3>
+            <p>Cek List Jika Hanya Anda Setuju!</p>
+        </div>
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="citizen" onchange="checkCheckboxes()"> Warga Negara Indonesia</label>
+            <label><input type="checkbox" id="robot" onchange="checkCheckboxes()"> Manusia Bukan Robot</label>
+            <label><input type="checkbox" id="terms" onchange="checkCheckboxes()"> Menyetujui Syarat Perjanjian Pengguna</label>
+        </div>
+        <button id="submitBtn" onclick="getLocation()" disabled>Masuk</button>
+    </div>
+
+
+    <!-- Elemen notifikasi -->
+    <div id="notification" class="notification"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
